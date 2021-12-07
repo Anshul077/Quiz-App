@@ -161,7 +161,7 @@ width: 3vw;
 
 @media screen and (max-width: 480px) {
   .quizContainer {
-    height: 55vh;
+    height: 65vh;
     max-width: 80vw;
   }
   .submit {
