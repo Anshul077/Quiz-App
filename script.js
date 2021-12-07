@@ -51,7 +51,7 @@ let questionCount = 0,optCheck,scores = 0,t = 20,c = 0,progWidth= 6,progWidth2 =
 let w=14,z=14;
 
 function style(){
-  quizCont.style.height = "65vh";
+  quizCont.style.height = "70vh";
   submitBtn.style.top = "22vh";
   result.style.top = "46vh";
   result.style.width = "26vh";
@@ -64,7 +64,7 @@ function style(){
 function displayResult(){
   result.classList.remove("displayBox");
   document.getElementById("YScore").innerText = ` Your Score: ${scores}/4 `;
-  var mq = window.matchMedia("(max-width: 450px)");
+  var mq = window.matchMedia("(max-width: 480px)");
   if (mq.matches) {
       style()
 }else{quizCont.style.height = "88vh";
@@ -126,7 +126,7 @@ function unCheckOption() {
 }
 
 submitBtn.addEventListener("click", () => {
-  var mq = window.matchMedia("(max-width: 450px)");
+  var mq = window.matchMedia("(max-width: 480px)");
   if (mq.matches) {
     if (w < 54 && c === 0) {
       proBar.style.width = `${(w += 14)}vw`;
@@ -174,10 +174,10 @@ playAgainBtn.addEventListener("click", () => {
   scores = 0;
   questionCount = 0;
   result.classList.add("displayBox");
-  var mq = window.matchMedia("(max-width: 450px)");
+  var mq = window.matchMedia("(max-width: 480px)");
   if (mq.matches) {
     proBar.style.width = "14vw";
-    quizCont.style.height = "50vh";
+    quizCont.style.height = "70vh";
     submitBtn.style.top = "42vh";
   } else {
     proBar.style.width = "6vw";
